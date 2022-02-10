@@ -1,0 +1,17 @@
+<div>
+  <h3>Listagem</h3>
+
+  <input
+    type="text"
+    placeholder="Busque pelo cliente"
+    (keyup)="filterByDesc($event)"
+  />
+
+  <div>
+    <ul>
+      <li *ngFor="let client of mockDisplay">
+        <p>{{ client.id }} | {{ client.descricao }}</p>
+      </li>
+    </ul>
+  </div>
+</div>
