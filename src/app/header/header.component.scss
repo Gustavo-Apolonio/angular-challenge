@@ -1,0 +1,17 @@
+.app-header-container {
+  background-color: rgba(0, 0, 0, 0.1);
+
+  height: 10vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0px 5px;
+
+  h2 {
+    margin: 0%;
+
+    text-decoration: underline;
+  }
+}

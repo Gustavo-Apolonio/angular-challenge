@@ -1,17 +1,11 @@
-<div>
-  <h3>Listagem</h3>
+<div class="app-list-container">
+  <h3>Clientes</h3>
 
-  <input
-    type="text"
-    placeholder="Busque pelo cliente"
-    (keyup)="filterByDesc($event)"
-  />
-
-  <div>
-    <ul>
-      <li *ngFor="let client of mockDisplay">
-        <p>{{ client.id }} | {{ client.descricao }}</p>
-      </li>
-    </ul>
-  </div>
+  <ul class="app-list-ul">
+    <li *ngFor="let client of mockDisplay">
+      <p *ngIf="client.id && client.desc">
+        <span> > </span> {{ client.id }} | {{ client.desc }}
+      </p>
+    </li>
+  </ul>
 </div>

@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'challenge-xp';
+
+  desc = '';
+
+  sendDesc(desc: string) {
+    this.desc = desc;
+  }
 }

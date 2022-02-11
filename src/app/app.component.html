@@ -1,5 +1,6 @@
 <div>
-  <app-list></app-list>
+  <app-header (descChangedEvent)="sendDesc($event)"></app-header>
+  <app-list [desc]="desc"></app-list>
 </div>
 
 <router-outlet></router-outlet>
